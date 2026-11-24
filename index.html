@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Expense Tracker</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    
+
+
+    <div class ="container">
+        
+    <h1>Student Expense Tracker </h1>
+    <p class="subtitle">mannage your Daily Expenses</p>
+
+    <h3> Add New Expense </h3>
+
+    <input type="text" id="expenceName"
+    placeholder="Enter Expense Name">
+
+    <input type="number" id="amount"
+    placeholder="Enter Amount" min="0.01" step="0.01">
+
+    <select id="category">
+        <option value="">Select Category</option>
+        <option value="Food">Food</option>
+        <option value="Travel">Travel</opction>
+        <option value="Eduction">Education</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <button id="addExpenseBtn">Add Expense</button>
+
+    <div class="total-box">
+        <h3>Total Expenses</h3>
+        <h2 id="totalAmount">$0.00</h2>
+    </div>
+
+
+    <h3>Filter Expenses</h3>
+
+    <select id="filter">
+        <option value="All">All Categories</option>
+        <option value="Food">Food</option>
+        <option value="Travel">Travel</option>
+        <option value="Eduction">Education</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Other">Other</option>
+
+
+        <h3>Expense List</h3>
+
+        <div id="expenseList">
+            <p>No expenses added yet.</p>
+        </div>
+        <script src="script.js"></script>
+
+    </div>
+    
+</body>
+</html>
